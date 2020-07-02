@@ -30,6 +30,7 @@ kubectl delete secret istio-ingressgateway-certs -n istio-system
 kubectl create -n istio-system secret tls istio-ingressgateway-certs \
   --key folder-ssl/star_ssl.key \
   --cert folder-ssl/star_ssl.crt
-
+```
+```
 kubectl delete pod istio-ingressgateway-54db5fd944-jvxd5 -n istio-system
 ```
