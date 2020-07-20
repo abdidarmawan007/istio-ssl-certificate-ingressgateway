@@ -21,16 +21,3 @@ total 0
 lrwxrwxrwx 1 root root 14 Feb 20 08:39 tls.crt -> ..data/tls.crt
 lrwxrwxrwx 1 root root 14 Feb 20 08:39 tls.key -> ..data/tls.key
 ```
-
-## renew ssl
-```
-kubectl delete secret istio-ingressgateway-certs -n istio-system
-```
-```
-kubectl create -n istio-system secret tls istio-ingressgateway-certs \
-  --key folder-ssl/star_ssl.key \
-  --cert folder-ssl/star_ssl.crt
-```
-```
-kubectl delete pod istio-ingressgateway-54db5fd944-jvxd5 -n istio-system
-```
