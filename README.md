@@ -21,3 +21,8 @@ total 0
 lrwxrwxrwx 1 root root 14 Feb 20 08:39 tls.crt -> ..data/tls.crt
 lrwxrwxrwx 1 root root 14 Feb 20 08:39 tls.key -> ..data/tls.key
 ```
+
+## rooling restart pods istio-ingressgateway for update with ssl we upload
+```
+kubectl rollout restart deployment istio-ingressgateway -n istio-system
+```
